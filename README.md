@@ -1,24 +1,38 @@
-# bun starter
+# elysia-fs-router
 
 ## Getting Started
 
-Click the [Use this template](https://github.com/wobsoriano/bun-lib-starter/generate) button to create a new repository with the contents starter.
+Run `bun install elysia-fs-router`.
 
-OR
+## Usage
+minimal
+```js
+import Elysia from "elysia";
+import { Config, elysiaFsRouter } from "elysia-fs-router";
+const config: Config = {
+    serverDir: '/example/server',
+    apiPrefix: 'api'
+}
+const app = new Elysia()
+.use(elysiaFsRouter(config))
+.listen(3006)
+```
+```js
+// example/server/hello.ts
+import { Context } from "elysia";
 
-Run `bun create wobsoriano/bun-lib-starter ./my-lib`.
+const GET = (ctx: Context) => {
+    return "Hello," + `${ctx.request.method}`;
+}
 
-## Setup
-
-```bash
-# install dependencies
-bun install
-
-# test the app
-bun test
-
-# build the app, available under dist
-bun run build
+export default {GET}
+```
+```ts
+//example/server/hi.ts
+export function DELETE(ctx: Context){
+    console.log(ctx.query);
+    return "hi," + `${ctx.request.method}`;
+}
 ```
 
 ## License
