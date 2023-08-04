@@ -1,6 +1,6 @@
 {
   "name": "elysia-fs-router",
-  "version": "0.1.3",
+  "version": "0.1.4-beta.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "elysia plugin to create a file system router",
