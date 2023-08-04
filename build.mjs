@@ -6,6 +6,7 @@ const build = await Bun.build({
   outdir: './dist',
   minify: true,
   splitting: true,
+  target: 'bun',
   plugins: [dts()]
 })
 
