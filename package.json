@@ -8,13 +8,14 @@
     "dev": "bun run --watch example/index.ts",
     "build": "bun run build.mjs",
     "prepublishOnly": "bun run build",
-    "release": "bumpp && npm publish"
+    "publish": "bumpp && npm publish"
   },
   "files": [
     "dist"
   ],
   "keywords": [
-    "bun"
+    "bun",
+    "elysiajs"
   ],
   "license": "MIT",
   "homepage": "https://github.com/daniel-le97/elysia-fs-router#readme",
@@ -28,8 +29,8 @@
     "@elysiajs/swagger": "^0.5.2",
     "bumpp": "^9.1.1",
     "bun-plugin-dts": "^0.1.0",
-    "bun-types": "^0.7.0",
-    "elysia-fs-router": "^0.1.0",
+    "bun-types": "^0.7.2",
+    "elysia-fs-router": "latest",
     "typescript": "^5.1.6"
   },
   "dependencies": {
