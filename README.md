@@ -29,6 +29,7 @@ export default {GET}
 ```
 ```ts
 //example/server/hi.ts
+//  delete request to http://localhost:3030/api/hi
 export function DELETE(ctx: Context){
     console.log(ctx.query);
     return "hi," + `${ctx.request.method}`;
@@ -36,6 +37,8 @@ export function DELETE(ctx: Context){
 ```
 ```ts
 //example/server/posts/[id]-[name].ts
+//this will be registered as
+/// http://localhost:3030/api/posts/{id}/{name}
 import { Context } from "elysia";
 
 export default(ctx: Context) => {
@@ -43,6 +46,15 @@ export default(ctx: Context) => {
     return {id: ctx.params?.id, name: ctx.params?.name};
 }
 
+```
+```ts
+// example/server/posts/[...all].ts
+// http://localhost:3030/api/posts/*
+import { Context } from "elysia";
+
+export default(ctx: Context) => {
+    return {params: ctx.params};
+}
 ```
 
 
