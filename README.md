@@ -5,7 +5,7 @@
 Run `bun install elysia-fs-router`.
 
 ## Usage
-minimal
+these can also be found in the examples folder
 ```js
 import Elysia from "elysia";
 import { Config, elysiaFsRouter } from "elysia-fs-router";
