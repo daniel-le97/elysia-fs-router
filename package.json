@@ -1,6 +1,6 @@
 {
   "name": "elysia-fs-router",
-  "version": "0.1.4-beta.4",
+  "version": "0.1.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "elysia plugin to create a file system router",
@@ -26,7 +26,7 @@
   "bugs": "https://github.com/daniel-le97/elysia-fs-router/issues",
   "author": "Daniel Le <daniel97.le@gmail.com>",
   "devDependencies": {
-    "@elysiajs/swagger": "^0.5.2",
+    "@elysiajs/swagger": "^0.6.0",
     "bumpp": "^9.1.1",
     "bun-plugin-dts": "^0.1.0",
     "bun-types": "^0.7.2",
@@ -34,6 +34,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "elysia": "^0.5.25"
+    "elysia": "^0.6.1"
   }
 }
