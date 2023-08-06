@@ -1,6 +1,6 @@
 {
   "name": "elysia-fs-router",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "elysia plugin to create a file system router",
@@ -30,7 +30,7 @@
     "bumpp": "^9.1.1",
     "bun-plugin-dts": "^0.1.0",
     "bun-types": "^0.7.2",
-    "elysia-fs-router": "latest",
+    "elysia-fs-router": "0.1.4",
     "typescript": "^5.1.6"
   },
   "dependencies": {
