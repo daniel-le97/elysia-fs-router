@@ -5,7 +5,7 @@ export function routeFixer(_route:string, prefix: string){
     prefix = prefix.trim().replace(/^\/|\/$/g, '');
 
     // if we have a prefix we would like to put infront of these routes add it from the config
-    let route: string = prefix ? prefix + _route : _route
+    let route: string = _route
     
     // if the route has a .post|.get|.delete|.put we want to clean that up
     if ((route.includes('.')) && (validMethods.includes(route.split('.')[1]?.toLowerCase()))) {
