@@ -28,7 +28,7 @@
   "devDependencies": {
     "@elysiajs/swagger": "^0.6.0",
     "bumpp": "^9.1.1",
-    "bun-plugin-dts": "^0.1.0",
+    "bun-plugin-dts": "^0.2.0",
     "bun-types": "^0.7.2",
     "elysia-fs-router": "0.1.6",
     "typescript": "^5.1.6"
