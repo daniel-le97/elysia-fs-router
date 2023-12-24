@@ -34,6 +34,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "elysia": "^0.6.1"
+    "elysia": "^0.8.0"
   }
 }
